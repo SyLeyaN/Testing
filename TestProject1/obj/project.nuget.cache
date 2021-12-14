@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KFsBjMjwQLN5SLHR7R0mruGYaa+UWkDIKgBBVb0XutdnPon72U+Fw2EW0Ys9k5fka7sOaKmNFj1W3ktkClj/Iw==",
+  "dgSpecHash": "g+APYls5yotx94PYDa2caCrwA5m5n76TfSSCtUGmWBCqHPsPHcvedxFSHaFrY6zVxOeXliLtS+84yw+JNJmt8Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\SyLeyaN\\source\\repos\\Tests\\TestProject1\\TestProject1\\TestProject1.csproj",
+  "projectFilePath": "E:\\TESTS2\\Testing\\TestProject1\\TestProject1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SyLeyaN\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
     "C:\\Users\\SyLeyaN\\.nuget\\packages\\microsoft.codecoverage\\17.0.0\\microsoft.codecoverage.17.0.0.nupkg.sha512",

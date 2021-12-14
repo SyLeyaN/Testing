@@ -26,15 +26,15 @@ namespace AutomatedTests
         public void TestPriceFilter()
         {
             driver.FindElement(By.CssSelector(".popular-categories__item-image-container")).Click();
+            string min = "input[name=\"minPrice\"]";
+            string max = "input[name=\"maxPrice\"]";
+            driver.FindElement(By.CssSelector(min)).Clear();
+            driver.FindElement(By.CssSelector(max)).Clear();
+            driver.FindElement(By.CssSelector(min)).SendKeys("1549");
+            
 
-            driver.FindElement(By.CssSelector("input[name=\"minPrice\"]")).Clear();
-            driver.FindElement(By.CssSelector("input[name=\"maxPrice\"]")).Clear();
-            driver.FindElement(By.CssSelector("input[name=\"minPrice\"]")).SendKeys("1549");
-
-            new WebDriverWait(driver, TimeSpan.FromSeconds(50));
-
-            driver.FindElement(By.CssSelector("input[name=\"maxPrice\"]")).Clear();
-            driver.FindElement(By.CssSelector("input[name=\"maxPrice\"]")).SendKeys("20500");          
+            driver.FindElement(By.CssSelector(max)).Clear();
+            driver.FindElement(By.CssSelector(max)).SendKeys("20500");          
             
             
             new WebDriverWait(driver, TimeSpan.FromSeconds(3))
@@ -53,12 +53,7 @@ namespace AutomatedTests
             driver.FindElement(By.CssSelector("button[title=\"Добавить в избранное\"]")).Click();
 
             new Actions(driver).MoveToElement(driver.FindElement(By.CssSelector("button[_ngcontent-serverapp-c92]"))).Build().Perform();
-
-            /*Console.WriteLine(driver.FindElement(By.CssSelector("button[title=\"Добавить в избранное\"]")).Text);
-            Assert.IsTrue(driver.FindElements(By.CssSelector(".tooltip__item.ng-tns-c194-55")).Any(),
-                "Tooltip has not appeared.");
-            Assert.AreEqual("К списку избранного", driver.FindElement(By.CssSelector(".button.ng-star-inserted[type=\"submit\"]")).Text.Trim(),
-                "Tooltip has not appeared.");     */       
+               
         }
 
         [Test]

@@ -1342,11 +1342,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SyLeyaN\\source\\repos\\Tests\\TestProject1\\TestProject1\\TestProject1.csproj",
+      "projectUniqueName": "E:\\TESTS2\\Testing\\TestProject1\\TestProject1.csproj",
       "projectName": "TestProject1",
-      "projectPath": "C:\\Users\\SyLeyaN\\source\\repos\\Tests\\TestProject1\\TestProject1\\TestProject1.csproj",
+      "projectPath": "E:\\TESTS2\\Testing\\TestProject1\\TestProject1.csproj",
       "packagesPath": "C:\\Users\\SyLeyaN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SyLeyaN\\source\\repos\\Tests\\TestProject1\\TestProject1\\obj\\",
+      "outputPath": "E:\\TESTS2\\Testing\\TestProject1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\SyLeyaN\\AppData\\Roaming\\NuGet\\NuGet.Config",
