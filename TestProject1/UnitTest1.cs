@@ -26,15 +26,18 @@ namespace AutomatedTests
         public void TestPriceFilter()
         {
             driver.FindElement(By.CssSelector(".popular-categories__item-image-container")).Click();
-            string min = "input[name=\"minPrice\"]";
-            string max = "input[name=\"maxPrice\"]";
-            driver.FindElement(By.CssSelector(min)).Clear();
-            driver.FindElement(By.CssSelector(max)).Clear();
-            driver.FindElement(By.CssSelector(min)).SendKeys("1549");
+            
             
 
-            driver.FindElement(By.CssSelector(max)).Clear();
-            driver.FindElement(By.CssSelector(max)).SendKeys("20500");          
+            WebElement minPriceInput = (WebElement)driver.FindElement(By.CssSelector("input[name=\"minPrice\"]"));
+            minPriceInput.Clear();
+            minPriceInput.SendKeys("1549");
+            
+
+            WebElement maxPriceInput = (WebElement)driver.FindElement(By.CssSelector("input[name=\"maxPrice\"]"));
+            maxPriceInput.Clear();
+            maxPriceInput.SendKeys("20500");
+                      
             
             
             new WebDriverWait(driver, TimeSpan.FromSeconds(3))
